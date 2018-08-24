@@ -19,6 +19,10 @@ public class Customer {
         return name;
     }
 
+    public Vector getRentals() {
+        return rentals;
+    }
+
     public String statement(){
         double totalAmount = 0;
         int frequentRenterPoints = 0;
@@ -29,7 +33,7 @@ public class Customer {
             Rental each = (Rental) rentals.nextElement();
 
             switch (each.getMovie().getPriceCode()){
-                case Movie.REGULAR:
+                    case Movie.REGULAR:
                     thisAmount += 2;
                     if(each.getDayRented() > 2){
                         thisAmount+=(each.getDayRented() - 2) * 1.5;
