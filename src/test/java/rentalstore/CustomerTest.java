@@ -18,18 +18,18 @@ public class CustomerTest {
     }
 
     @Test
-    public void should_print_right_message_when_given_a_rental(){
+    public void should_print_right_message_when_given_children_movice_and_2_dayRented(){
 
-        Movie movie = new Movie("movice",2);
+        Movie movie = new Movie("childrenMovice",Movie.CHILDRENS);
         Rental rental = new Rental(movie,2);
-        Customer customer = new Customer("小明");
+        Customer customer = new Customer("Jhon");
 
         customer.addRental(rental);
 
-        assertEquals("Rental Record for 小明\n" +
-                "\tmovice\t1.5\n" +
-                "Amount owed is1.5\n" +
-                "You earned1 frequent renter points",customer.statement());
+        assertEquals("Rental Record for Jhon\n" +
+                "movice title:childrenMovice,this movice amount:1.5\n" +
+                "Amount owed is 1.5\n" +
+                "You earned 1 frequent renter points\n",customer.statement());
 
     }
 }

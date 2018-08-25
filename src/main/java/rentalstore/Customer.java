@@ -39,7 +39,7 @@ public class Customer {
                         thisAmount+=(each.getDayRented() - 2) * 1.5;
                     }
                     break;
-                case Movie.NEW_RELEASE:
+                    case Movie.NEW_RELEASE:
                     thisAmount+=each.getDayRented()*3;
                     break;
                     case Movie.CHILDRENS:
@@ -58,13 +58,13 @@ public class Customer {
             }
 
             //show figures for this rental
-            result += "\t" + each.getMovie().getTitle() + "\t" + String.valueOf(thisAmount) + "\n";
+            result += "movice title:"+each.getMovie().getTitle() + "," + "this movice amount:"+String.valueOf(thisAmount) + "\n";
             totalAmount += thisAmount;
         }
 
         //add footer lines
-        result += "Amount owed is" + String.valueOf(totalAmount) + "\n";
-        result += "You earned" + String.valueOf(frequentRenterPoints) + " frequent renter points";
+        result += "Amount owed is " + String.valueOf(totalAmount) + "\n";
+        result += "You earned " + String.valueOf(frequentRenterPoints) + " frequent renter points"+ "\n";
         return result;
     }
 }
