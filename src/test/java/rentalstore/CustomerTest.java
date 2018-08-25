@@ -10,7 +10,7 @@ public class CustomerTest {
 
         Movie movie = new Movie("movice",2);
         Rental rental = new Rental(movie,2);
-        Customer customer = new Customer("小明");
+        Customer customer = new Customer("Jhon");
 
         customer.addRental(rental);
 
@@ -94,4 +94,5 @@ public class CustomerTest {
                 "Amount owed is 9.0\n" +
                 "You earned 2 frequent renter points\n",customer.statement());
     }
+
 }
