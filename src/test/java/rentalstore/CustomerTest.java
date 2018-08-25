@@ -32,4 +32,20 @@ public class CustomerTest {
                 "You earned 1 frequent renter points\n",customer.statement());
 
     }
+
+    @Test
+    public void should_print_right_message_when_given_children_movice_and_4_dayRented(){
+
+        Movie movie = new Movie("childrenMovice",Movie.CHILDRENS);
+        Rental rental = new Rental(movie,4);
+        Customer customer = new Customer("Jhon");
+
+        customer.addRental(rental);
+
+        assertEquals("Rental Record for Jhon\n" +
+                "movice title:childrenMovice,this movice amount:3.0\n" +
+                "Amount owed is 3.0\n" +
+                "You earned 1 frequent renter points\n",customer.statement());
+
+    }
 }
