@@ -18,7 +18,7 @@ public class CustomerTest {
     }
 
     @Test
-    public void should_print_right_message_when_given_children_movice_and_2_dayRented(){
+    public void should_print_right_message_when_given_CHILDRENS_movice_and_2_dayRented(){
 
         Movie movie = new Movie("childrenMovice",Movie.CHILDRENS);
         Rental rental = new Rental(movie,2);
@@ -34,7 +34,7 @@ public class CustomerTest {
     }
 
     @Test
-    public void should_print_right_message_when_given_children_movice_and_4_dayRented(){
+    public void should_print_right_message_when_given_CHILDRENS_movice_and_4_dayRented(){
 
         Movie movie = new Movie("childrenMovice",Movie.CHILDRENS);
         Rental rental = new Rental(movie,4);
@@ -48,4 +48,21 @@ public class CustomerTest {
                 "You earned 1 frequent renter points\n",customer.statement());
 
     }
+
+    @Test
+    public void should_print_right_message_when_given_REGULAR_movice_and_2_dayRented(){
+
+        Movie movie = new Movie("Romance of the Three Kingdoms",Movie.REGULAR);
+        Rental rental = new Rental(movie,2);
+        Customer customer = new Customer("Jhon");
+
+        customer.addRental(rental);
+
+        assertEquals("Rental Record for Jhon\n" +
+                "movice title:Romance of the Three Kingdoms,this movice amount:2.0\n" +
+                "Amount owed is 2.0\n" +
+                "You earned 1 frequent renter points\n",customer.statement());
+
+    }
+
 }
