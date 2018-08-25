@@ -34,7 +34,7 @@ public class Customer {
             double thisAmount = each.getThisAmount();
 
             //add frequent renter points
-            frequentRenterPoints = each.getFrequentRenterPoints();
+            frequentRenterPoints = each.getFrequentRenterPoints(); 
 
             //show figures for this rental
             result += "movice title:"+each.getMovie().getTitle() + "," + "this movice amount:"+String.valueOf(thisAmount) + "\n";
