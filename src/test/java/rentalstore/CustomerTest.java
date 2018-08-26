@@ -21,7 +21,7 @@ public class CustomerTest {
     public void should_print_right_message_when_given_CHILDRENS_movice_and_2_dayRented(){
 
         Movie movie = new Movie("childrenMovice",Movie.CHILDRENS);
-        Rental rental = new Rental(movie,2);
+        Rental rental = new Rental(movie,2,new ChildrensMovie());
         Customer customer = new Customer("Jhon");
 
         customer.addRental(rental);
@@ -37,7 +37,7 @@ public class CustomerTest {
     public void should_print_right_message_when_given_CHILDRENS_movice_and_4_dayRented(){
 
         Movie movie = new Movie("childrenMovice",Movie.CHILDRENS);
-        Rental rental = new Rental(movie,4);
+        Rental rental = new Rental(movie,4,new ChildrensMovie());
         Customer customer = new Customer("Jhon");
 
         customer.addRental(rental);
@@ -53,7 +53,7 @@ public class CustomerTest {
     public void should_print_right_message_when_given_REGULAR_movice_and_2_dayRented(){
 
         Movie movie = new Movie("Romance of the Three Kingdoms",Movie.REGULAR);
-        Rental rental = new Rental(movie,2);
+        Rental rental = new Rental(movie,2,new RegularMovie());
         Customer customer = new Customer("Jhon");
 
         customer.addRental(rental);
@@ -69,7 +69,7 @@ public class CustomerTest {
     public void should_print_right_message_when_given_REGULAR_movice_and_3_dayRented(){
 
         Movie movie = new Movie("Romance of the Three Kingdoms",Movie.REGULAR);
-        Rental rental = new Rental(movie,3);
+        Rental rental = new Rental(movie,3,new RegularMovie());
         Customer customer = new Customer("Jhon");
 
         customer.addRental(rental);
@@ -84,7 +84,7 @@ public class CustomerTest {
     public void should_print_right_message_when_given_NEW_RELEASE_movice_and_3_dayRented(){
 
         Movie movie = new Movie("Love apartment",Movie.NEW_RELEASE);
-        Rental rental = new Rental(movie,3);
+        Rental rental = new Rental(movie,3,new NewReleaseMovie());
         Customer customer = new Customer("Jhon");
 
         customer.addRental(rental);
@@ -99,7 +99,7 @@ public class CustomerTest {
     public void should_print_right_Htmlmessage_when_given_CHILDRENS_movice_and_2_dayRented(){
 
         Movie movie = new Movie("childrenMovice",Movie.CHILDRENS);
-        Rental rental = new Rental(movie,2);
+        Rental rental = new Rental(movie,2,new ChildrensMovie());
         Customer customer = new Customer("Jhon");
 
         customer.addRental(rental);
@@ -115,7 +115,7 @@ public class CustomerTest {
     public void should_print_right_Htmlmessage_when_given_CHILDRENS_movice_and_4_dayRented(){
 
         Movie movie = new Movie("childrenMovice",Movie.CHILDRENS);
-        Rental rental = new Rental(movie,4);
+        Rental rental = new Rental(movie,4,new ChildrensMovie());
         Customer customer = new Customer("Jhon");
 
         customer.addRental(rental);
@@ -131,7 +131,7 @@ public class CustomerTest {
     public void should_print_right_Htmlmessage_when_given_REGULAR_movice_and_2_dayRented(){
 
         Movie movie = new Movie("Romance of the Three Kingdoms",Movie.REGULAR);
-        Rental rental = new Rental(movie,2);
+        Rental rental = new Rental(movie,2,new RegularMovie());
         Customer customer = new Customer("Jhon");
 
         customer.addRental(rental);
@@ -147,7 +147,7 @@ public class CustomerTest {
     public void should_print_right_Htmlmessage_when_given_REGULAR_movice_and_3_dayRented(){
 
         Movie movie = new Movie("Romance of the Three Kingdoms",Movie.REGULAR);
-        Rental rental = new Rental(movie,3);
+        Rental rental = new Rental(movie,3,new RegularMovie());
         Customer customer = new Customer("Jhon");
 
         customer.addRental(rental);
@@ -162,7 +162,7 @@ public class CustomerTest {
     public void should_print_right_Htmlmessage_when_given_NEW_RELEASE_movice_and_3_dayRented(){
 
         Movie movie = new Movie("Love apartment",Movie.NEW_RELEASE);
-        Rental rental = new Rental(movie,3);
+        Rental rental = new Rental(movie,3,new NewReleaseMovie());
         Customer customer = new Customer("Jhon");
 
         customer.addRental(rental);
