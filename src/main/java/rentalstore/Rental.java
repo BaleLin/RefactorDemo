@@ -3,11 +3,18 @@ package rentalstore;
 public class Rental {
     private Movie movie;
     private int dayRented;
-
+    private MovieType movieType;
     public Rental(Movie movie, int dayRented) {
         this.movie = movie;
         this.dayRented = dayRented;
     }
+
+    public Rental(Movie movie, int dayRented, MovieType movieType) {
+        this.movie = movie;
+        this.dayRented = dayRented;
+        this.movieType = movieType;
+    }
+
     public double getCharge() {
         double thisAmount =0;
         switch (this.getMovie().getPriceCode()){
