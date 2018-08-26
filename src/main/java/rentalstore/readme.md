@@ -14,7 +14,7 @@ Titanic: 3.0<BR>
 On this rental you earned <EM>2</EM> frequent renter points<P>
 ```
 要求
-1. 先为已有代码添加测试
+1. 先为已有代码添加测试  
 2. 小步提交，每次提交说明动机和   手法
 
 #进阶
