@@ -29,7 +29,7 @@ public class CustomerTest {
         assertEquals("Rental Record for Jhon\n" +
                 "movice title:childrenMovice,this movice amount:1.5\n" +
                 "Amount owed is 1.5\n" +
-                "You earned 1 frequent renter points\n",customer.statement());
+                "You earned 1 frequent renter points\n", customer.statement(customer));
 
     }
 
@@ -45,7 +45,7 @@ public class CustomerTest {
         assertEquals("Rental Record for Jhon\n" +
                 "movice title:childrenMovice,this movice amount:3.0\n" +
                 "Amount owed is 3.0\n" +
-                "You earned 1 frequent renter points\n",customer.statement());
+                "You earned 1 frequent renter points\n", customer.statement(customer));
 
     }
 
@@ -61,7 +61,7 @@ public class CustomerTest {
         assertEquals("Rental Record for Jhon\n" +
                 "movice title:Romance of the Three Kingdoms,this movice amount:2.0\n" +
                 "Amount owed is 2.0\n" +
-                "You earned 1 frequent renter points\n",customer.statement());
+                "You earned 1 frequent renter points\n", customer.statement(customer));
 
     }
 
@@ -77,7 +77,7 @@ public class CustomerTest {
         assertEquals("Rental Record for Jhon\n" +
                 "movice title:Romance of the Three Kingdoms,this movice amount:3.5\n" +
                 "Amount owed is 3.5\n" +
-                "You earned 1 frequent renter points\n",customer.statement());
+                "You earned 1 frequent renter points\n", customer.statement(customer));
 
     }
     @Test
@@ -92,7 +92,7 @@ public class CustomerTest {
         assertEquals("Rental Record for Jhon\n" +
                 "movice title:Love apartment,this movice amount:9.0\n" +
                 "Amount owed is 9.0\n" +
-                "You earned 2 frequent renter points\n",customer.statement());
+                "You earned 2 frequent renter points\n", customer.statement(customer));
     }
 
 }

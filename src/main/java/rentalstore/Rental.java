@@ -8,7 +8,7 @@ public class Rental {
         this.movie = movie;
         this.dayRented = dayRented;
     }
-    public double getThisAmount() {
+    public double getCharge() {
         double thisAmount =0;
         switch (this.getMovie().getPriceCode()){
             case Movie.REGULAR:
