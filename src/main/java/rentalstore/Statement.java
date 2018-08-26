@@ -24,7 +24,6 @@ public abstract class Statement {
         return result;
     }
     protected abstract String getEachRentalString(Rental each);
-
     protected abstract String getHeadString(Customer customer);
     protected abstract String getFootString(double totalAmount, int frequentRenterPoints);
 }
