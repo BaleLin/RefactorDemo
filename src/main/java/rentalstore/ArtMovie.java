@@ -1,12 +1,10 @@
 package rentalstore;
 
-public class NewReleaseMovie extends MovieType {
+public class ArtMovie extends MovieType{
     protected double getCharge(int dayRented) {
-        return dayRented * 3.0;
+        return 6.0;
     }
     public double getFrequentRenterPoints(int dayRented) {
-       if (dayRented>1)
-        return 2;
-       return 1;
+        return 1.5;
     }
 }

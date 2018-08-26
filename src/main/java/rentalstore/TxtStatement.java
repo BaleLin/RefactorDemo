@@ -13,7 +13,7 @@ public  class TxtStatement extends Statement{
         return "Rental Record for " + customer.getName()
                 + "\n";
     }
-    protected String getFootString(double totalAmount, int frequentRenterPoints) {
+    protected String getFootString(double totalAmount, double frequentRenterPoints) {
         return "Amount owed is " + String.valueOf(totalAmount)
                 + "\n"
                 +"You earned "

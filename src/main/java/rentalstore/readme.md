@@ -15,7 +15,7 @@ On this rental you earned <EM>2</EM> frequent renter points<P>
 ```
 要求
 1. 先为已有代码添加测试
-2. 小步提交，每次提交说明动机和手法
+2. 小步提交，每次提交说明动机和   手法
 
 #进阶
 如果完成了以html格式打印小票的任务，请再完成以下要求<br>

@@ -8,7 +8,7 @@ import java.util.Enumeration;
 public abstract class Statement {
     public  String statement(Customer customer) {
         double totalAmount = 0;
-        int frequentRenterPoints = 0;
+        double frequentRenterPoints = 0;
         Enumeration rentals = customer.rentals.elements();
         String result = getHeadString(customer);
         while (rentals.hasMoreElements()) {
@@ -25,5 +25,5 @@ public abstract class Statement {
     }
     protected abstract String getEachRentalString(Rental each);
     protected abstract String getHeadString(Customer customer);
-    protected abstract String getFootString(double totalAmount, int frequentRenterPoints);
+    protected abstract String getFootString(double totalAmount, double frequentRenterPoints);
 }
