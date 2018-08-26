@@ -23,6 +23,6 @@ public class Customer {
         return rentals;
     }
     public String statement(Customer customer){
-        return new Statement().statement(customer);
+        return new TxtStatement().statement(customer);
     }
 }
