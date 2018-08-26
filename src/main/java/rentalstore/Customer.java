@@ -22,7 +22,10 @@ public class Customer {
     public Vector getRentals() {
         return rentals;
     }
-    public String statement(Customer customer){
+    public String getTxtStatement(Customer customer){
         return new TxtStatement().statement(customer);
+    }
+    public String getHtmlStatement(Customer customer){
+        return new HtmlStatement().statement(customer);
     }
 }
